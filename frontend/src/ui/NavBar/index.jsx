@@ -20,6 +20,7 @@ export default function NavBar() {
         <div className="list-style-none me-auto flex flex-col ps-0 lg:flex-row text-white space-x-10">
           <Link className="ml-15 mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/buy">Buy</Link>
           <Link className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/about">?</Link>
+          <Link className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/design-system">Design System</Link>
         </div>
           
     </div>

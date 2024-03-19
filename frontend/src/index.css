@@ -1,20 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
-  :root {
-    /* Primitives Tokens  */
-    --clr-white: 0 0% 100%;
-    --clr-dark-grey: 0 0% 10%;
-    /* Sementics Tokens */
-    --foreground: var(--clr-dark-grey);
-    --background: var(--clr-white);
+ 
+    :root {
+      /* Primitives Tokens  */
+      /* Font color */
+      --clr-white: 0 0% 100%;
+      --clr-black: 0 0% 0%;
+      --clr-red: 51 100% 50%;
+      --clr-grey: 0 0% 42%;
 
-    --radius: 0.5rem;
-    --gap: 1rem;
+      /* Theme color */
+      --clr-yellow: 51 100% 50%;
 
-    
-    
-  }
+      /* Background color */
+      --clr-darkGrey: 0 0% 20%;
+      --clr-veryDarkGrey: 0 0% 13%;
+      --clr-lightGrey: 210 1% 35%;
+
+      /* Font */
+      --ff-play: "Play", "sans-serif";
+
+
+      /* Sementics Tokens */
+      --button: var(--clr-yellow);
+      --movie: var(--clr-darkGrey);
+
+      --ff-btn: var(--ff-play);
+
+
+    }
 }
+

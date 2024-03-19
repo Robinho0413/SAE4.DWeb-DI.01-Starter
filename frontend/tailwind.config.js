@@ -4,12 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
+        button: "hsl(var(--button) /<alpha-value>)",
+        movie: "hsl(var(--movie) /<alpha-value>)",
         background: "hsl(var(--background) /<alpha-value>)",
         foreground: "hsl(var(--foreground) /<alpha-value>)",
       },
       textColor: {
         background: "hsl(var(--background) /<alpha-value>)",
         foreground: "hsl(var(--foreground) /<alpha-value>)",
+      },
+      fontFamily: {
+        button: "var(--ff-btn)",
       },
       maxWidth: {
         ch: "60ch",

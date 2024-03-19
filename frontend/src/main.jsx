@@ -11,6 +11,8 @@ import OurTeams, { loader as ourTeamLoader} from './routes/ourteams.jsx';
 import './index.css';
 import ErrorPage from './ui/ErrorPage/index.jsx';
 
+import DesignSystem from './routes/designSystem.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,10 @@ const router = createBrowserRouter([
         path: '/team/:teamName',
         element: <OurTeams />,
         loader: ourTeamLoader
+      },
+      {
+        path: '/design-system',
+        element: <DesignSystem />,
       }
     ]
   },
