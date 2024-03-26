@@ -1,33 +1,26 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 export default function NavBar() {
 
-    return (
+  return (
 
-<nav
-  className="flex-no-wrap relative flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4">
-  <div className="flex w-full flex-wrap items-center justify-between px-3"> 
-   
-    <div className="list-style-none me-auto flex flex-col ps-0 lg:flex-row text-white space-x-10">
-  
-        <div className="list-style-none me-auto flex flex-col ps-0 lg:flex-row text-white">
-          <Link className="mb-4 lg:mb-0 lg:pe-2 text-[#BBA]" to="/crash">Our Teams </Link>
-          <Link className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/team/sales">Sales</Link>
-          <Link className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/team/webdesign">Webdesign</Link>
-          <Link className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/team/development">Development</Link>
-        </div>
-        <div className="list-style-none me-auto flex flex-col ps-0 lg:flex-row text-white space-x-10">
+    <nav className="relative flex w-full items-center justify-between py-4 px-16 bg-black font-global">
+      <div className="flex w-full flex-wrap items-center space-x-5 text-white">
+        <Link className="hover:text-navHover focus:text-[#BB0]" to="/accueil">Accueil</Link>
+        <Link className="hover:text-navHover focus:text-[#BB0]" to="/team/sales">Séries</Link>
+        <Link className="hover:text-navHover focus:text-[#BB0]" to="/team/webdesign">Films</Link>
+        <Link className="hover:text-navHover focus:text-[#BB0]" to="/team/development">Jeunesse</Link>
+
+        {/* <div className="list-style-none me-auto flex flex-col ps-0 lg:flex-row text-white space-x-10">
           <Link className="ml-15 mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/buy">Buy</Link>
           <Link className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/about">?</Link>
           <Link className="mb-4 lg:mb-0 lg:pe-2 hover:text-[#BBA] focus:text-[#BB0]" to="/design-system">Design System</Link>
-        </div>
-          
-    </div>
-    
-  </div>
-</nav>
-    );
+        </div> */}
+
+      </div>
+    </nav>
+  );
 
 }
 

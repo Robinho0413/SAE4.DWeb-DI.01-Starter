@@ -6,6 +6,7 @@ export default {
       colors: {
         button: "hsl(var(--button) /<alpha-value>)",
         movie: "hsl(var(--movie) /<alpha-value>)",
+        navHover: "hsl(var(--navHover) /<alpha-value>)",
         background: "hsl(var(--background) /<alpha-value>)",
         foreground: "hsl(var(--foreground) /<alpha-value>)",
       },
@@ -15,6 +16,7 @@ export default {
       },
       fontFamily: {
         button: "var(--ff-btn)",
+        global: "var(--ff-global)",
       },
       maxWidth: {
         ch: "60ch",

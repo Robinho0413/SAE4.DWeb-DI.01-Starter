@@ -1,5 +1,17 @@
 import {fakeNetwork} from './utils.js';
 
+export async function fetchAllMoviesData() {
+    let answer = await fetch('http://localhost:8080/api/movies');
+    let data = await answer.json();
+    return data;
+}
+
+export async function fetchAllCategoriesData() {
+    let answer = await fetch('http://localhost:8080/api/categories');
+    let data = await answer.json();
+    return data;
+}
+
 export async function fetchOurTeams(teamName){
     await fakeNetwork();
     let answer = await fetch('/src/lib/data/teams-data.json');

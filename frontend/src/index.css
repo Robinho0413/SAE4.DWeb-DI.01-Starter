@@ -29,9 +29,11 @@
 
       /* Sementics Tokens */
       --button: var(--clr-yellow);
+      --navHover: var(--clr-yellow); 
       --movie: var(--clr-darkGrey);
 
       --ff-btn: var(--ff-play);
+      --ff-global: var(--ff-play);
 
 
     }

@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Root from './routes/root.jsx';
 import About from './routes/about.jsx';
-import Buy, {loader as buyLoader} from './routes/buy.jsx';
+import Accueil, {loader as buyLoader} from './routes/accueil.jsx';
 import OurTeams, { loader as ourTeamLoader} from './routes/ourteams.jsx';
 
 
@@ -21,8 +21,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/buy',
-        element: <Buy />,
+        path: '/accueil',
+        element: < Accueil/>,
         loader: buyLoader
       },
       {
