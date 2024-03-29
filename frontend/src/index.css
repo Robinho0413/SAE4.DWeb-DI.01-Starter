@@ -28,6 +28,8 @@
 
 
       /* Sementics Tokens */
+      --background: var(--clr-veryDarkGrey);
+
       --button: var(--clr-yellow);
       --navHover: var(--clr-yellow); 
       --movie: var(--clr-darkGrey);

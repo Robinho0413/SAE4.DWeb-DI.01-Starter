@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Root from './routes/root.jsx';
 import About from './routes/about.jsx';
-import Accueil, {loader as buyLoader} from './routes/accueil.jsx';
+import Accueil, {loader as accueilLoader} from './routes/accueil.jsx';
 import OurTeams, { loader as ourTeamLoader} from './routes/ourteams.jsx';
 
 
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/accueil',
-        element: < Accueil/>,
-        loader: buyLoader
+        element: <Accueil/>,
+        loader: accueilLoader
       },
       {
         path: '/team/:teamName',

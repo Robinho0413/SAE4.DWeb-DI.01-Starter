@@ -14,45 +14,29 @@ const card = cva(base, {
         "bg-button-secondary-bg",
         "hover:bg-button-secondary-hover",
       ],
-
-      infos: [
-        "bg-button-secondary-bg",
-        "hover:bg-button-info-hover",
-        "hover:opacity-70",
-        "font-button-secondary",
-        "normal-case",
-        "not-italic",
-        "lg:w-fit",
-        "text-sm",
-
-      ],
     },
     size: {
-      small: ["pt-[56.25%] relative"],
-      big: ["pt-[133.33%] relative"],
+      small: ["w-40"],
+      big: ["w-48"],
 
     },
   },
   compoundVariants: [{ intent: "primary" }],
   defaultVariants: {
     intent: "primary",
-
   },
 });
 
-export default function CardMovie({ title, bgImage, channelImage, size }) {
+export default function CardMovie({ title, bgImage, size }) {
   return <>
     
       <div className="block w-full">
             <div className={card({ size})}>
-              <div className="bg-top bg-no-repeat bg-cover rounded-sm block">
+              <div className="bg-top bg-no-repeat bg-cover block">
                 <picture>
                   <source srcSet={bgImage} />
-                  <img src={bgImage} alt={title} className="absolute top-0 left-0 w-full h-full bg-top bg-no-repeat bg-cover rounded-sm z-10"/>
+                  <img src={bgImage} alt={title} className="w-full bg-top bg-no-repeat bg-cover rounded-md hover:scale-110 duration-500	"/>
                 </picture>
-              </div>
-              <div className="absolute top-0 left-0 w-full h-full overflow-hidden rounded-sm z-30">
-                <img src={channelImage} alt="" className="absolute bottom-0 left-[0.1875rem] w-[3rem] h-[2.25rem] max-w-[3rem]" />
               </div>
             </div>
       </div>
