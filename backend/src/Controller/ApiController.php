@@ -11,8 +11,10 @@ use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 use App\Entity\Movie;
+use App\Entity\Type;
 use App\Repository\CategoryRepository;
 use App\Repository\MovieRepository;
+use App\Repository\TypeRepository;
 
 class ApiController extends AbstractController
 {
@@ -72,6 +74,15 @@ class ApiController extends AbstractController
         // $response est une instance de JsonResponse qui hérite de Response
         // C'est la classe à utiliser lorsque l'on veut retourner du JSON
         // $data sera automatiquement encodé en JSON
+        $response = new JsonResponse( $data );
+        return $response;
+    }
+
+    #[Route('/api/movie/type/{id}', name: 'app_api_type')]
+    public function readType(MovieRepository $mov, Type $type, SerializerInterface $serializer ): Response
+    {
+        $movies = $mov->findBy(['type' => $type]);
+        $data = $serializer->normalize($movies, null, ['groups' => 'json_movie']);
         $response = new JsonResponse( $data );
         return $response;
     }

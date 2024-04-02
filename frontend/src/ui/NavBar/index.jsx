@@ -9,7 +9,7 @@ export default function NavBar() {
       <div className="flex flex-wrap items-center space-x-8 text-white text-lg">
         <Link className="hover:text-navHover focus:text-[#BB0]" to="/accueil">Accueil</Link>
         <Link className="hover:text-navHover focus:text-[#BB0]" to="/team/sales">Séries</Link>
-        <Link className="hover:text-navHover focus:text-[#BB0]" to="/team/webdesign">Films</Link>
+        <Link className="hover:text-navHover focus:text-[#BB0]" to="/films">Films</Link>
         <Link className="hover:text-navHover focus:text-[#BB0]" to="/team/development">Jeunesse</Link>
       </div>
       

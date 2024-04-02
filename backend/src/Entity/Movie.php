@@ -29,6 +29,9 @@ class Movie
     #[ORM\Column(length: 512)]
     private ?string $urlImage = null;
 
+    #[ORM\ManyToOne(inversedBy: 'movies')]
+    private ?Type $type = null;
+
     public function __construct()
     {
         $this->category = new ArrayCollection();
@@ -83,6 +86,18 @@ class Movie
     public function setUrlImage(string $urlImage): static
     {
         $this->urlImage = $urlImage;
+
+        return $this;
+    }
+
+    public function getType(): ?Type
+    {
+        return $this->type;
+    }
+
+    public function setType(?Type $type): static
+    {
+        $this->type = $type;
 
         return $this;
     }

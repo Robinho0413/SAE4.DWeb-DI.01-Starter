@@ -12,6 +12,12 @@ export async function fetchAllCategoriesData() {
     return data;
 }
 
+export async function fetchByTypeData() {
+    let answer = await fetch('http://localhost:8080/api/movie/type');
+    let data = await answer.json();
+    return data;
+}
+
 export async function fetchOurTeams(teamName){
     await fakeNetwork();
     let answer = await fetch('/src/lib/data/teams-data.json');
