@@ -6,7 +6,8 @@ import Root from './routes/root.jsx';
 import About from './routes/about.jsx';
 import Accueil, {loader as accueilLoader} from './routes/accueil.jsx';
 import Films, {loader as filmsLoader} from './routes/films.jsx';
-import OurTeams, { loader as ourTeamLoader} from './routes/ourteams.jsx';
+import Series, { loader as seriesLoader} from './routes/series.jsx';
+import Jeunesse, { loader as jeunesseLoader} from './routes/jeunesse.jsx';
 
 
 import './index.css';
@@ -22,19 +23,29 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
+        path: '/',
+        element: <Accueil/>,
+        loader: accueilLoader
+      },
+      {
         path: '/accueil',
         element: <Accueil/>,
         loader: accueilLoader
       },
       {
-        path: '/team/:teamName',
-        element: <OurTeams />,
-        loader: ourTeamLoader
+        path: '/series',
+        element: <Series />,
+        loader: seriesLoader
       },
       {
         path: '/films',
         element: <Films />,
         loader: filmsLoader
+      },
+      {
+        path: '/jeunesse',
+        element: <Jeunesse />,
+        loader: jeunesseLoader
       },
       {
         path: '/design-system',

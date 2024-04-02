@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 
 export async function loader() {
   let catData = await fetchAllCategoriesData();
-  let typeData = await fetchByTypeData(2);
+  let typeData = await fetchByTypeData(3);
   return { categories: catData, types: typeData };
 }
 
-export default function Films() {
+export default function Jeunesse() {
 
   const data = useLoaderData();
 

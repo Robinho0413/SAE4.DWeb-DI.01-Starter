@@ -12,8 +12,8 @@ export async function fetchAllCategoriesData() {
     return data;
 }
 
-export async function fetchByTypeData() {
-    let answer = await fetch('http://localhost:8080/api/movie/type');
+export async function fetchByTypeData(id) {
+    let answer = await fetch(`http://localhost:8080/api/movie/type/${id}`);
     let data = await answer.json();
     return data;
 }
