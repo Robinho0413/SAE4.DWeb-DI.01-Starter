@@ -5,7 +5,7 @@ export default function Root() {
 
   return (
     <>
-      <section className="bg-background">
+      <section className="bg-background min-h-screen">
         <NavBar/>
         <Outlet/>
       </section>

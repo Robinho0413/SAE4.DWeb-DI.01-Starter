@@ -8,6 +8,7 @@ import Accueil, {loader as accueilLoader} from './routes/accueil.jsx';
 import Films, {loader as filmsLoader} from './routes/films.jsx';
 import Series, { loader as seriesLoader} from './routes/series.jsx';
 import Jeunesse, { loader as jeunesseLoader} from './routes/jeunesse.jsx';
+import SearchContent, {loader as searchLoader} from './routes/searchContent.jsx';
 
 
 import './index.css';
@@ -46,6 +47,11 @@ const router = createBrowserRouter([
         path: '/jeunesse',
         element: <Jeunesse />,
         loader: jeunesseLoader
+      },
+      {
+        path: 'searchContent/:searched',
+        element: <SearchContent />,
+        loader: searchLoader
       },
       {
         path: '/design-system',

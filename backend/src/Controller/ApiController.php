@@ -14,7 +14,7 @@ use App\Entity\Movie;
 use App\Entity\Type;
 use App\Repository\CategoryRepository;
 use App\Repository\MovieRepository;
-use App\Repository\TypeRepository;
+use Symfony\Component\HttpFoundation\Request;
 
 class ApiController extends AbstractController
 {
@@ -78,12 +78,23 @@ class ApiController extends AbstractController
         return $response;
     }
 
-    #[Route('/api/movie/type/{id}', name: 'app_api_type')]
+    #[Route('/api/movie/type/{id}', name: 'app_api_type', methods:['GET'])]
     public function readType(MovieRepository $mov, Type $type, SerializerInterface $serializer ): Response
     {
         $movies = $mov->findBy(['type' => $type]);
         $data = $serializer->normalize($movies, null, ['groups' => 'json_movie']);
         $response = new JsonResponse( $data );
+        return $response;
+    }
+
+    #[Route('/api/movies/searchContent', name: 'app_api_movie_search', methods:['GET'])]
+    public function search(Request $request, MovieRepository $mov, SerializerInterface $serializer ): Response
+    {
+        $search = $request->query->get('search');
+        $data = $serializer->normalize($mov->findByField($search), null, ['groups' => 'json_movie']);
+        $response = new JsonResponse( $data );
+       
+
         return $response;
     }
 

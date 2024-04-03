@@ -1,4 +1,4 @@
-import CardMovie from '../ui/Card/CardMovie.jsx';
+import CardMovie from '../ui/CardMovie/index.jsx';
 import { useLoaderData } from "react-router-dom";
 import { fetchAllCategoriesData, fetchByTypeData } from "../lib/loaders.js";
 import { Link } from 'react-router-dom';

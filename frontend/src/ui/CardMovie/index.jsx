@@ -31,7 +31,7 @@ export default function CardMovie({ title, bgImage, size }) {
   return <>
     
       <div className="block w-full">
-            <div className={card({ size})}>
+            <div className={card({size})}>
               <div className="bg-top bg-no-repeat bg-cover block">
                 <picture>
                   <source srcSet={bgImage} />

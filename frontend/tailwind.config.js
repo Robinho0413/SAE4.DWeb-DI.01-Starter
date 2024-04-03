@@ -6,6 +6,7 @@ export default {
       colors: {
         button: "hsl(var(--button) /<alpha-value>)",
         movie: "hsl(var(--movie) /<alpha-value>)",
+        placeholder: "hsl(var(--placeholder) /<alpha-value>)",
         navHover: "hsl(var(--navHover) /<alpha-value>)",
         background: "hsl(var(--background) /<alpha-value>)",
         foreground: "hsl(var(--foreground) /<alpha-value>)",

@@ -37,6 +37,8 @@
       --ff-btn: var(--ff-play);
       --ff-global: var(--ff-play);
 
+      --placeholder: var(--clr-grey)
+
 
     }
 }
