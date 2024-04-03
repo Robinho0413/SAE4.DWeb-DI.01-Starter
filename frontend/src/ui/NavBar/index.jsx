@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import SearchBar from '../SearchBar';
 import SubButton from '../Button/SubButton';
+import LoginButton from '../Button/LoginButton';
 
 
 export default function NavBar() {
@@ -22,8 +23,8 @@ export default function NavBar() {
       <div className='flex flex-row items-center space-x-8'>
         <SearchBar className={'flex'}></SearchBar>
         <SubButton intent={'primary'} size={'small'}>S'abonner</SubButton>
+        <LoginButton className={'flex flex-row items-center'}></LoginButton>
       </div>
-
     </nav>
   );
 
