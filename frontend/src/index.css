@@ -29,6 +29,7 @@
 
       /* Sementics Tokens */
       --background: var(--clr-veryDarkGrey);
+      --navBackground: var(--clr-black);
 
       --button: var(--clr-yellow);
       --navHover: var(--clr-yellow); 
@@ -40,6 +41,10 @@
       --placeholder: var(--clr-grey)
 
 
+    }
+
+    div:has(>input:focus){
+      background: white;
     }
 }
 

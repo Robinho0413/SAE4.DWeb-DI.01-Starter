@@ -1,11 +1,34 @@
 import { Login } from "../../images/icons";
+import { cva } from "class-variance-authority";
 
-export default function LoginButton({ className, ...rest }) {
+const base = "";
+
+const loginButton = cva(base, {
+  variants: {
+    intent: {
+      primary: [
+        "text-white",
+        "hover:text-button",
+        "flex",
+        "items-center",
+        "gap-4",
+        "text-sm",
+        "font-semibold"
+      ],
+    },
+  },
+  compoundVariants: [{ intent: "primary"}],
+  defaultVariants: {
+    intent: "primary",
+  },
+});
+
+export default function LoginButton({ className, text, ...rest }) {
 
     return (
-        <button {...rest} className={Login({ className })}>
-            <Login className="text-button w-5 h-5"/>
-            <h3>Connexion</h3>
+        <button {...rest} className={loginButton({ className })}>
+            <Login className="text-button w-8"/>
+            {text}
         </button>
     )
 }

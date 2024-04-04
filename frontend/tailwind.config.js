@@ -10,6 +10,7 @@ export default {
         navHover: "hsl(var(--navHover) /<alpha-value>)",
         background: "hsl(var(--background) /<alpha-value>)",
         foreground: "hsl(var(--foreground) /<alpha-value>)",
+        navBackground: "hsl(var(--navBackground) /<alpha-value>)",
       },
       textColor: {
         background: "hsl(var(--background) /<alpha-value>)",

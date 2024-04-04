@@ -1,13 +1,15 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "../ui/NavBar";
+import Footer from "../ui/Footer";
 
 export default function Root() {
 
   return (
     <>
-      <section className="bg-background min-h-screen">
+      <section>
         <NavBar/>
         <Outlet/>
+        <Footer/>
       </section>
     </>
   );
