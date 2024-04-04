@@ -53,10 +53,6 @@ const router = createBrowserRouter([
         element: <SearchContent />,
         loader: searchLoader
       },
-      {
-        path: '/design-system',
-        element: <DesignSystem />,
-      }
     ]
   },
   {
