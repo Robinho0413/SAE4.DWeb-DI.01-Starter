@@ -41,7 +41,7 @@ export default function Series() {
       categoryList.push(
         <li key={category.name} className='space-y-4'>
           <h3>{category.name}</h3>
-          <ul className="flex">
+          <ul className="flex flex-wrap">
             {moviesList}
           </ul>
         </li>

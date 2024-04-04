@@ -36,7 +36,7 @@ export default function SearchContent() {
             <>
                 <div className='min-h-screen flex flex-col font-globalFont text-globalText text-2xl m-8 space-y-4'>
                     <h3 className="font-semibold">Résultats de recherche</h3>
-                    <ul className='flex'>
+                    <ul className='flex flex-wrap'>
                         {moviesList}
                     </ul>
                 </div>
