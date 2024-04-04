@@ -8,17 +8,11 @@ const card = cva(base, {
     intent: {
       primary: [
         "",
-
-      ],
-      secondary: [
-        "bg-button-secondary-bg",
-        "hover:bg-button-secondary-hover",
       ],
     },
     size: {
       small: ["w-40"],
       big: ["w-48"],
-
     },
   },
   compoundVariants: [{ intent: "primary" }],

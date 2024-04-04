@@ -34,7 +34,7 @@ export default function SearchContent() {
 
         return (
             <>
-                <div className='flex flex-col font-global text-white text-2xl m-8 space-y-4'>
+                <div className='min-h-screen flex flex-col font-globalFont text-globalText text-2xl m-8 space-y-4'>
                     <h3 className="font-semibold">Résultats de recherche</h3>
                     <ul className='flex'>
                         {moviesList}
@@ -46,7 +46,9 @@ export default function SearchContent() {
     else {
         return (
             <>
-                <h3 className="text-white">Aucuns résultats</h3>
+                <div className="min-h-screen flex items-center justify-center">
+                    <h3 className="text-white font-semibold text-2xl">Aucuns résultats</h3>
+                </div>
             </>
         )
     }

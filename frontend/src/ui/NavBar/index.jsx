@@ -8,8 +8,8 @@ export default function NavBar() {
 
   return (
 
-    <nav className="flex w-full items-center py-2.5 px-16 bg-navBackground font-global">
-      <div className="flex items-center flex-start space-x-8 text-white text-lg">
+    <nav className="flex w-full items-center py-2.5 px-16 bg-navBackground font-globalFont">
+      <div className="flex items-center flex-start space-x-8 text-globalText text-lg">
         <Link className="hover:text-navHover focus:text-[#BB0]" to="/accueil">Accueil</Link>
         <Link className="hover:text-navHover focus:text-[#BB0]" to="/series">Séries</Link>
         <Link className="hover:text-navHover focus:text-[#BB0]" to="/films">Films</Link>
@@ -21,7 +21,7 @@ export default function NavBar() {
       </div>
 
       <div className='flex flex-row items-center space-x-6'>
-        <SearchBar className={'flex'}></SearchBar>
+        <SearchBar></SearchBar>
         <SubButton intent={'primary'} size={'small'}>S'abonner</SubButton>
         <LoginButton text="Connexion"></LoginButton>
       </div>

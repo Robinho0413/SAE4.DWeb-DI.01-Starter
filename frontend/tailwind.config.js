@@ -4,33 +4,36 @@ export default {
   theme: {
     extend: {
       colors: {
-        button: "hsl(var(--button) /<alpha-value>)",
-        movie: "hsl(var(--movie) /<alpha-value>)",
-        placeholder: "hsl(var(--placeholder) /<alpha-value>)",
-        navHover: "hsl(var(--navHover) /<alpha-value>)",
+        globalText: "hsl(var(--globalText) /<alpha-value>)",
         background: "hsl(var(--background) /<alpha-value>)",
-        foreground: "hsl(var(--foreground) /<alpha-value>)",
+
         navBackground: "hsl(var(--navBackground) /<alpha-value>)",
+        navHover: "hsl(var(--navHover) /<alpha-value>)",
+
+        searchPlaceholder: "hsl(var(--searchPlaceholder) /<alpha-value>)",
+        searchBackground: "hsl(var(--searchBackground) /<alpha-value>)",
+        focusSearchBackground: "hsl(var(--focus-searchBackground) /<alpha-value>)",
+        searchIcon: "hsl(var(--searchIcon) /<alpha-value>)",
+
+        buttonBackground: "hsl(var(--buttonBackground) /<alpha-value>)",
+        buttonText: "hsl(var(--buttonText) /<alpha-value>)",
+        buttonBorder: "hsl(var(--buttonBorder) /<alpha-value>)",
+        hoverButtonBackground: "hsl(var(--hover-buttonBackground) /<alpha-value>)",
+        hoverButtonText: "hsl(var(--hover-buttonText) /<alpha-value>)",
+        
+        accountIcon: "hsl(var(--accountIcon) /<alpha-value>)",
+
+        footerBackground: "hsl(var(--footerBackground) /<alpha-value>)",
+
+
+        movie: "hsl(var(--movie) /<alpha-value>)",
       },
       textColor: {
         background: "hsl(var(--background) /<alpha-value>)",
         foreground: "hsl(var(--foreground) /<alpha-value>)",
       },
       fontFamily: {
-        button: "var(--ff-btn)",
-        global: "var(--ff-global)",
-      },
-      maxWidth: {
-        ch: "60ch",
-      },
-      aspectRatio: {
-        card: "1 / 1.25",
-      },
-      backgroundImage: {
-        shape: "url('./assets/bgshapes.svg')",
-      },
-      borderRadius: {
-        DEFAULT: "var(--radius)",
+        globalFont: "var(--ff-global)",
       },
     },
   },

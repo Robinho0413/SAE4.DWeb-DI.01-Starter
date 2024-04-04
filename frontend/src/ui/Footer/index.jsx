@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
 
-    <div className='flex flex-row justify-between bg-black text-white px-16 py-6'>
+    <div className='flex flex-row justify-between bg-footerBackground text-globalText px-16 py-6'>
         <div className='flex flex-wrap gap-8'>
             <Link to="/about">Communiquer avec nous</Link>
             <Link to="/about">Modalités d'utilisation</Link>

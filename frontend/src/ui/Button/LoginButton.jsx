@@ -7,8 +7,8 @@ const loginButton = cva(base, {
   variants: {
     intent: {
       primary: [
-        "text-white",
-        "hover:text-button",
+        "text-globalText",
+        "hover:text-hoverButtonText",
         "flex",
         "items-center",
         "gap-4",
@@ -27,7 +27,7 @@ export default function LoginButton({ className, text, ...rest }) {
 
     return (
         <button {...rest} className={loginButton({ className })}>
-            <Login className="text-button w-8"/>
+            <Login className="text-accountIcon w-8"/>
             {text}
         </button>
     )

@@ -7,28 +7,28 @@ const subButton = cva(base, {
   variants: {
     intent: {
       primary: [
-        "font-button",
+        "font-globalFont",
         "font-bold",
-        "bg-button",
+        "bg-buttonBackground",
         "text-black",
         "border",
-        "border-button",
+        "border-buttonBorder",
         "rounded-md",
-        "hover:bg-black",
-        "hover:text-button",
+        "hover:bg-hoverButtonBackground",
+        "hover:text-hoverButtonText",
         "ease-in-out",
         "duration-300"
       ],
       secondary: [
-        "font-button",
+        "font-globalFont",
         "font-bold",
-        "bg-button",
+        "bg-buttonBackground",
         "text-black",
         "hover:border",
-        "hover:border-button",
+        "hover:border-buttonBorder",
         "rounded-md",
-        "hover:bg-black",
-        "hover:text-button",
+        "hover:bg-hoverButtonBackground",
+        "hover:text-hoverButtonText",
       ],
     },
     size: {
@@ -50,10 +50,3 @@ export default function SubButton({ intent, size, className, ...rest }) {
   );
 }
 
-// export default function Ex3_2() {
-//   return (
-//     <div className="grid h-screen place-content-center">
-//       <Button intent={'primary'} size={'small'}>S'abonner</Button>
-//     </div>
-//   );
-// }

@@ -28,18 +28,31 @@
 
 
       /* Sementics Tokens */
-      --background: var(--clr-veryDarkGrey);
-      --navBackground: var(--clr-black);
-
-      --button: var(--clr-yellow);
-      --navHover: var(--clr-yellow); 
-      --movie: var(--clr-darkGrey);
-
-      --ff-btn: var(--ff-play);
       --ff-global: var(--ff-play);
 
-      --placeholder: var(--clr-grey)
+      --globalText: var(--clr-white);
+      --background: var(--clr-veryDarkGrey);
 
+      --navBackground: var(--clr-black);
+      --navHover: var(--clr-yellow); 
+      --searchPlaceholder: var(--clr-darkGrey);
+      --searchBackground: var(--clr-veryDarkGrey);
+      --focus-searchBackground: var(--clr-white);
+      --searchIcon: var(--clr-yellow);
+      --buttonBackground: var(--clr-yellow);
+      --buttonText: var(--clr-black);
+      --buttonBorder: var(--clr-yellow);
+      --hover-buttonBackground: var(--clr-black);
+      --hover-buttonText: var(--clr-yellow);
+      --accountIcon: var(--clr-yellow);
+
+      --footerBackground: var(--clr-black);
+
+
+
+
+
+      --movie: var(--clr-darkGrey);
 
     }
 

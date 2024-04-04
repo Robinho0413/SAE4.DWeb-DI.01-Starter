@@ -50,7 +50,7 @@ export default function Accueil() {
   }
 
   return (
-    <ul className='font-global text-white text-2xl space-y-8 m-14'>
+    <ul className='min-h-screen font-globalFont text-globalText text-2xl space-y-8 m-14'>
       {categoryList}
     </ul>
   )
