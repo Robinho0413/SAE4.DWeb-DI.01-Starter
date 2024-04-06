@@ -20,17 +20,17 @@ export default {
         buttonBorder: "hsl(var(--buttonBorder) /<alpha-value>)",
         hoverButtonBackground: "hsl(var(--hover-buttonBackground) /<alpha-value>)",
         hoverButtonText: "hsl(var(--hover-buttonText) /<alpha-value>)",
+
+        buttonMovietext: "hsl(var(--buttonMovieText) /<alpha-value>)",
+        hoverButtonMovieBackground: "hsl(var(--hover-buttonMovieBackground) /<alpha-value>)",
+        hoverButtonMovieText: "hsl(var(--hover-buttonMovieText) /<alpha-value>)",
         
         accountIcon: "hsl(var(--accountIcon) /<alpha-value>)",
 
         footerBackground: "hsl(var(--footerBackground) /<alpha-value>)",
-
-
-        movie: "hsl(var(--movie) /<alpha-value>)",
       },
       textColor: {
         background: "hsl(var(--background) /<alpha-value>)",
-        foreground: "hsl(var(--foreground) /<alpha-value>)",
       },
       fontFamily: {
         globalFont: "var(--ff-global)",

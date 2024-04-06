@@ -16,16 +16,14 @@ export default function NavBar() {
         <Link className="hover:text-navHover focus:text-[#BB0]" to="/jeunesse">Jeunesse</Link>
       </div>
 
-      <div className="hidden md:block flex items-center md:ml-auto md:mr-8">
+      <div className="flex items-center md:ml-auto md:mr-8">
         <Link to="/accueil"><img className='object-contain w-auto h-10 mx-4' src="../../../assets/app_header_logo.png" alt="club illico" /></Link>
       </div>
 
-      <div className='flex flex-wrap items-center justify-center gap-6'>
+      <div className='flex flex-row items-center justify-center gap-2 md:gap-6'>
         <SearchBar></SearchBar>
-        <div className='flex flex-row gap-16 md:gap-6'>
-          <SubButton intent={'primary'} size={'small'}>S'abonner</SubButton>
-          <LoginButton text="Connexion"></LoginButton>
-        </div>
+        <SubButton intent={'primary'} size={'small'}>S'abonner</SubButton>
+        <LoginButton text="Connexion"></LoginButton>
       </div>
     </nav>
   );

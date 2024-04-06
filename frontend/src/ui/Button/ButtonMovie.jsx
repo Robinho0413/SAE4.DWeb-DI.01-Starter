@@ -10,15 +10,15 @@ const buttonMovie = cva(base, {
   variants: {
     intent: {
       primary: [
-        "font-button",
+        "font-globalFont",
         "font-bold",
         "bg-transparent",
-        "text-button",
+        "text-buttonMovietext",
         "border",
-        "border-button",
+        "border-buttonBorder",
         "rounded-md",
-        "hover:bg-button",
-        "hover:text-black",
+        "hover:bg-hoverButtonMovieBackground",
+        "hover:text-hoverButtonMovieText",
       ],
     },
     size: {
@@ -36,7 +36,7 @@ export default function ButtonMovie({ intent, size, className, text, ...rest }) 
 
   return (
     <button {...rest} className={buttonMovie({ intent, size, className })}>
-      <Play className="text-button group-hover:text-black w-5 h-5"/>
+      <Play className="text-buttonMovietext group-hover:text-hoverButtonMovieText w-5 h-5"/>
       {text}
     </button>)
 }

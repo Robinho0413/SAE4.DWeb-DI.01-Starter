@@ -19,7 +19,7 @@ export default function SearchBar({ className, ...rest }) {
   }
 
   return (
-    <div className='flex items-center w-80 h-9 py-1.5 px-5 bg-searchBackground rounded-md'>
+    <div className='flex items-center md:w-80 h-9 py-1.5 px-5 bg-searchBackground rounded-md'>
 
       <input id="searchInput" className='bg-transparent text-searchPlaceholder text-base max-w-64 w-full pr-2.5 focus-visible:outline-none focus:bg-focusSearchBackground' type="text" placeholder='Rechercher' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyPress={handleKeyPress}/>
 

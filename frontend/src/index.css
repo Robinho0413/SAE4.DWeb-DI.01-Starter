@@ -31,7 +31,7 @@
       --ff-global: var(--ff-play);
 
       --globalText: var(--clr-white);
-      --background: var(--clr-veryDarkGrey);
+      --background: var(--clr-darkGrey);
 
       --navBackground: var(--clr-black);
       --navHover: var(--clr-yellow); 
@@ -45,6 +45,10 @@
       --hover-buttonBackground: var(--clr-black);
       --hover-buttonText: var(--clr-yellow);
       --accountIcon: var(--clr-yellow);
+
+      --buttonMovieText: var(--clr-yellow);
+      --hover-buttonMovieBackground: var(--clr-yellow);
+      --hover-buttonMovieText: var(--clr-black);
 
       --footerBackground: var(--clr-black);
 

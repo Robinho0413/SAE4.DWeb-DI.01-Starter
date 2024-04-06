@@ -28,7 +28,9 @@ export default function LoginButton({ className, text, ...rest }) {
     return (
         <button {...rest} className={loginButton({ className })}>
             <Login className="text-accountIcon w-8"/>
-            {text}
+            <div className="hidden md:block">
+              {text}
+            </div>
         </button>
     )
 }
