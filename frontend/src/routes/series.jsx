@@ -51,7 +51,7 @@ export default function Series() {
   }
 
   return (
-    <ul className='min-h-screen font-globalFont text-globalText text-2xl space-y-8 m-14'>
+    <ul className='min-h-screen font-globalFont text-globalText text-2xl space-y-8 m-2 md:m-8'>
       {categoryList}
 
     </ul>

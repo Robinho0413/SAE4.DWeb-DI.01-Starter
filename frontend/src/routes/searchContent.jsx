@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom"
 import CardMovie from "../ui/CardMovie"
 import { fetchSearch } from "../lib/loaders"
+import { Link } from 'react-router-dom';
 
 export async function loader({ params }) {
     let data = await fetchSearch(params.searched);
@@ -17,14 +18,14 @@ export default function SearchContent() {
 
         return (
             <li key={mov.id} className="m-2 space-y-2">
-                {/* <Link to={'/accueil/' + mov.id}> */}
+                <Link to={'/movie/' + mov.id} className="space-y-2">
                     <CardMovie
                         bgImage={imageBox}
                         title={mov.name}
                         size="small"
                     />
-                    <h3 className="text-base max-w-40">{mov.name}</h3>
-                {/* </Link> */}
+                    <h3 className="text-globalText max-w-40">{mov.name}</h3>
+                </Link>
             </li>
         );
     })
@@ -34,7 +35,7 @@ export default function SearchContent() {
 
         return (
             <>
-                <div className='min-h-screen flex flex-col font-globalFont text-globalText text-2xl m-8 space-y-4'>
+                <div className='min-h-screen flex flex-col font-globalFont text-globalText text-2xl m-2 md:m-8 space-y-4'>
                     <h3 className="font-semibold">Résultats de recherche</h3>
                     <ul className='flex flex-wrap'>
                         {moviesList}

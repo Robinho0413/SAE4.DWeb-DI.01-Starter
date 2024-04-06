@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import { fetchOneMovie } from "../lib/loaders";
-import SeeMovie from "../ui/SeeMovie";
+import OneMovie from "../ui/OneMovie";
 
 
 
@@ -14,12 +14,9 @@ export default function Movie(){
 
     let movie = useLoaderData();
 
-    let fillButtonLink = movie.trailer;
-
-
     return(
         <div className="min-h-screen">
-            <SeeMovie linkContent={fillButtonLink} movie={movie}/>
+            <OneMovie movie={movie}/>
         </div>
     )
     

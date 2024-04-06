@@ -32,6 +32,9 @@ class Movie
     #[ORM\ManyToOne(inversedBy: 'movies')]
     private ?Type $type = null;
 
+    #[ORM\Column(length: 1000)]
+    private ?string $trailer = null;
+
     public function __construct()
     {
         $this->category = new ArrayCollection();
@@ -98,6 +101,18 @@ class Movie
     public function setType(?Type $type): static
     {
         $this->type = $type;
+
+        return $this;
+    }
+
+    public function getTrailer(): ?string
+    {
+        return $this->trailer;
+    }
+
+    public function setTrailer(string $trailer): static
+    {
+        $this->trailer = $trailer;
 
         return $this;
     }

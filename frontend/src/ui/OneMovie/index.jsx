@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import ButtonMovie from '../Button/ButtonMovie';
 
-export default function SeeMovie({ linkContent, movie }) {
+export default function OneMovie({ movie }) {
 
     let imageMovie = '/assets/images/' + movie.urlImage;
 
@@ -20,10 +20,10 @@ export default function SeeMovie({ linkContent, movie }) {
             <img src={imageMovie} alt={movie.title} className="object-contain rounded-lg"/>
             <div className="flex flex-col gap-8 p-4 text-globalText">
                 <div>
-                    <h3 className="text-3xl font-globalFont">{movie.name}</h3>
+                    <h3 className="text-3xl font-globalFont font-semibold">{movie.name}</h3>
                     <h4 className="text-lg opacity-50 overflow-hidden text-nowrap font-normal">{catList}</h4>
                 </div>
-                <Link to={linkContent} className="w-full flex">
+                <Link to={movie.trailer} className="w-full flex">
                     <ButtonMovie intent={'primary'} size={'medium'} className={'group flex gap-3 items-center'} text="BANDE-ANNONCE"></ButtonMovie>
                 </Link>
                 <div>

@@ -12,6 +12,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator;
 
 use \App\Entity\Category;
 use \App\Entity\Movie;
+use \App\Entity\Type;
 use \App\Entity\User;
 
 class DashboardController extends AbstractDashboardController
@@ -50,6 +51,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
         yield MenuItem::linkToCrud('Category', 'fas fa-list', Category::class);
         yield MenuItem::linkToCrud('Movie', 'fas fa-list', Movie::class);
+        yield MenuItem::linkToCrud('Type', 'fas fa-list', Type::class);
         yield MenuItem::linkToCrud('User', 'fas fa-list', User::class);
     }
 }
