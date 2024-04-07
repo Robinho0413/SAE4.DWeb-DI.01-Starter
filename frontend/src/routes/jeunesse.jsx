@@ -24,7 +24,7 @@ export default function Jeunesse() {
 
           return (
             <li key={mov.id} className="m-2">
-              <Link to={'/accueil/' + mov.id}>
+              <Link to={'/movie/' + mov.id}>
                 <CardMovie
                   bgImage={imageBox}
                   title={mov.name}
